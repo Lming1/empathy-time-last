@@ -14,3 +14,27 @@
  *= require_self
  *= require simple_calendar
  */
+.nanumpenscript {
+    color: white;
+    font-size: 30px;
+}
+.nanumbrushscript {
+    color: white;
+    font-size: 80px;
+}
+.menu {
+    padding: 3px;
+}
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    padding: 10px;
+    height: 100%;
+    color: white;
+    background-image: url('board.jpg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+}

@@ -22,11 +22,6 @@ ActiveRecord::Schema.define(version: 2018_06_01_163327) do
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
-    t.integer "interval"
-    t.integer "starttime"
-    t.integer "fintime"
-    t.integer "startday"
-    t.integer "days"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
