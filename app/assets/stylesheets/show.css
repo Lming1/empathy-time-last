@@ -1,0 +1,40 @@
+.inter {
+    float: left;
+}
+
+p {
+    padding: 0;
+}
+
+td{
+    padding: 1;
+}
+#tb-click {
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+/*.tb-click:visited {*/
+    /*text-decoration: none;*/
+/*    background-color: red;*/
+/*}*/
+/*href=\" /posts/<%= @post.id%> \"*/
+/*.tb-click:hover {*/
+/*    text-decoration: none;*/
+/*    background-color: none;*/
+/*}*/
+
+/*.tb-click:link {*/
+    
+/*}*/
+/*.tb-click:active {*/
+    /*text-decoration: none;*/
+    /*background-color: red;*/
+/*}*/
+
+.day {
+    
+}
+.tb {
+    
+}

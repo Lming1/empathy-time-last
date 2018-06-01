@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<h1>공감 시간</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <!--<th>Content</th>-->
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.title %></td>
+        <!--<td><%#= post.content %></td>-->
+        <td><%= post.user.email %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>
+
+<!--<div id="scheduler_here" class="dhx_cal_container" style='width:100%; height:800px;'>-->
+<!-- <div class="dhx_cal_navline">-->
+<!--   <div class="dhx_cal_prev_button">&nbsp;</div>-->
+<!--   <div class="dhx_cal_next_button">&nbsp;</div>-->
+<!--   <div class="dhx_cal_today_button"></div>-->
+<!--   <div class="dhx_cal_date"></div>-->
+<!--   <div class="dhx_cal_tab" name="day_tab" style="right:204px;"></div>-->
+<!--   <div class="dhx_cal_tab" name="week_tab" style="right:140px;"></div>-->
+<!--   <div class="dhx_cal_tab" name="month_tab" style="right:76px;"></div>-->
+<!-- </div>-->
+<!-- <div class="dhx_cal_header">-->
+<!-- </div>-->
+<!-- <div class="dhx_cal_data">-->
+<!-- </div>-->
+<!--</div>-->
+
+<!--<script>-->
+<!--    scheduler.config.xml_date="%Y-%m-%d %H:%i";-->
+<!--    scheduler.init("scheduler_here");-->
+<!--    scheduler.load("<%= data_path %>", "json");-->
+<!--    var dp = new dataProcessor('<%= db_action_path %>');-->
+<!--    dp.init(scheduler);-->
+<!--    dp.setTransactionMode("GET", false);-->
+    
+    
+<!--</script>-->
+
+
+
