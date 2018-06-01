@@ -2,6 +2,11 @@ require 'simple_calendar'
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
+  before_action :check_user, only: [:edit, :update, :destroy]
+  def check_user
+       # 유저 전체 데이터가 현재 로그인 되어있는 유저와 다르면 root_path로 돌려보내라
+    redirect_to root_path, notice: '권한이없습니다' and return unless @post.user == current_user
+  end
   
   def data
     events = Event.all
